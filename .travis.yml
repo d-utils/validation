@@ -1,0 +1,5 @@
+language: d
+
+branches:
+  only:
+    - master

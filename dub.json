@@ -1,0 +1,11 @@
+{
+	"name": "dutils-validation",
+	"description": "Validation annotations for dlang structs",
+	"homepage": "https://github.com/d-utils/validation",
+	"authors": [
+		"Fredrik Söderström"
+	],
+	"copyright": "Copyright © 2020, Fredrik Söderström",
+	"license": "MIT",
+	"targetType": "library"
+}
