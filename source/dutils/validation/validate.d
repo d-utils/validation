@@ -54,7 +54,7 @@ void validate(T)(ref T object, string pathPrefix) {
             auto path = pathPrefix.length > 0 ? pathPrefix ~ "." ~ member : member;
             auto result = attribute.getError(value, path);
             if (!result.isNull) {
-              errors ~= result;
+              errors ~= result.get;
             }
           }
         }
@@ -84,7 +84,7 @@ void validate(T)(ref T object, string pathPrefix) {
             auto path = pathPrefix.length > 0 ? pathPrefix ~ "." ~ member : member;
             auto result = attribute.getError(__traits(getMember, object, member), path);
             if (!result.isNull) {
-              errors ~= result;
+              errors ~= result.get;
             }
           }
         }
